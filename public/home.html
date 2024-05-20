@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="CodeCrunchers Logo">
+        <h1>CodeCrunchers</h1>
+        <ul class="links-container">
+            <li class="link-item"><a href="home.html" class="link">Home</a></li>
+            <li class="link-item"><a href="signin.html" class="link">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">Welcome to the world of</span>
+                Blog
+                <span class="no-fill">Writing</span>
+            </h1>
+            <a href="editor.html" class="btn">Write a Blog</a>
+        </div>
+    </header>
+
+    <!-- blog section -->
+    <section class="blogs-section">
+        <div class="blog-card">
+            <img src="img/hive.png" class="blog-image" alt="Gate Exam Pattern">
+            <h1 class="blog-title">HIVE INDIA</h1>
+            <p class="blog-overview">
+                Hive India is an innovative platform dedicated to promoting collaboration, innovation, and growth among various sectors in India.</p>
+            <a href="hive.html" class="btn dark">Read</a>
+            
+        </div>
+        <div class="blog-card">
+            <img src="img/java.jpg" class="blog-image" alt="JavaScript">
+            <h1 class="blog-title">JavaScript</h1>
+            <p class="blog-overview">JavaScript is the programming language of the web and it is easy to learn.</p>
+            <a href="javascript.html" class="btn dark">Read</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="img/nodejs.png" class="blog-image" alt="Node.js">
+            <h1 class="blog-title">Node.js</h1>
+            <p class="blog-overview">Node.js is a cross-platform, open-source JavaScript runtime environment that runs on Windows, Linux, etc.</p>
+            <a href="nodejs.html" class="btn dark">Read</a>
+        </div>
+    </section>
+    <section class="blogs-section">
+        <div class="blog-card">
+            <img src="img/gate.jpg" class="blog-image" alt="Gate Exam Pattern">
+            <h1 class="blog-title">Gate Exam Pattern</h1>
+            <p class="blog-overview">The Graduate Aptitude Test in Engineering (GATE) is an examination that primarily tests the comprehensive understanding of various undergraduate subjects in engineering.</p>
+            <a href="gate.html" class="btn dark">Read</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="img/graph.jpeg" class="blog-image" alt="Graphic Design">
+            <h1 class="blog-title">Graphic Design</h1>
+            <p class="blog-overview">Graphic design is a craft where professionals create visual content to communicate messages.</p>
+            <a href="graphix.html" class="btn dark">Read</a>
+        </div>
+        <div class="blog-card">
+            <img src="img/tech.jpg" class="blog-image" alt="Technology and Gadgets">
+            <h1 class="blog-title">Technology and Gadgets</h1>
+            <p class="blog-overview">Writing about technology and gadgets can range from breaking news to in-depth analysis of new products or emerging trends.</p>
+            <a href="tech.html" class="btn dark">Read</a>
+        </div>
+    </section>
+    <section class="blogs-section">
+        <div class="blog-card">
+            <img src="img/c.jpg" class="blog-image" alt="C Programming">
+            <h1 class="blog-title">C Programming</h1>
+            <p class="blog-overview">C is a general-purpose programming language created by Dennis Ritchie in 1972.</p>
+            <a href="c.html" class="btn dark">Read</a>
+        </div>
+        
+    </section>
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Connect with us</h3>
+            <ul class="socials">
+                <li><a href="https://www.twitter.com"><img src="img/t.webp" alt="Twitter" width="29" height="33"></a></li>
+                <li><a href="https://www.instagram.com"><img src="img/i.webp" alt="Instagram" width="29" height="33"></a></li>
+                <li><a href="https://www.linkedin.com"><img src="img/L.png" alt="LinkedIn" width="29" height="33"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CodeCrunchers | Designed by CodeCrunchers Team</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

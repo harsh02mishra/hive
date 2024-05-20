@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4CAF50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.links-container {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.link-item {
+    margin-left: 20px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+.header {
+    background: url('../img/header.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.header .heading {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header .small {
+    font-size: 1.2rem;
+    display: block;
+}
+
+.header .no-fill {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Blog Section Styles */
+.blogs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.blog-card {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+    max-width: 300px;
+    text-align: center;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.blog-overview {
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn.dark {
+    background-color: #333;
+}
+
+.btn.dark:hover {
+    background-color: #555;
+}
+

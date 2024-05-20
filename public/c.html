@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #333;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        #toggleExamples {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn C Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#syntax">Syntax</a></li>
+                <li><a href="#examples">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction to C Programming</h2>
+            <p>C is a powerful general-purpose programming language. It is fast, portable, and available on all platforms.</p>
+        </section>
+        <section id="syntax">
+            <h2>Basic Syntax</h2>
+            <p>The syntax of C programming is the set of rules that defines how a C program will be written and interpreted (both by the human reader and by the computer).</p>
+            <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+            </code></pre>
+        </section>
+        <section id="examples">
+            <h2>Examples</h2>
+            <button id="toggleExamples">Toggle Examples</button>
+            <div id="exampleContent">
+                <article>
+                    <h3>Hello World Program</h3>
+                    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+                    </code></pre>
+                </article>
+                <article>
+                    <h3>Adding Two Numbers</h3>
+                    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a, b, sum;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    sum = a + b;
+    printf("Sum: %d", sum);
+    return 0;
+}
+                    </code></pre>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('toggleExamples').addEventListener('click', function() {
+            const exampleContent = document.getElementById('exampleContent');
+            if (exampleContent.style.display === 'none') {
+                exampleContent.style.display = 'block';
+            } else {
+                exampleContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

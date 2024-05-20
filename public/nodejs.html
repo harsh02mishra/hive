@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Programming Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        header {
+            background: #68a063;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 5px solid #68a063;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #68a063;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        #toggleExamples {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #68a063;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn Node.js Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#syntax">Syntax</a></li>
+                <li><a href="#examples">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction to Node.js</h2>
+            <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to build scalable network applications.</p>
+        </section>
+        <section id="syntax">
+            <h2>Basic Syntax</h2>
+            <p>The syntax of Node.js is similar to JavaScript, but it includes additional modules to support server-side programming.</p>
+            <pre><code>
+// Load HTTP module
+const http = require("http");
+
+// Create HTTP server and listen on port 8000 for requests
+http.createServer((req, res) => {
+  // Set the response HTTP header with HTTP status and Content type
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  // Send the response body "Hello World"
+  res.end('Hello World\n');
+}).listen(8000);
+
+// Print URL for accessing server
+console.log('Server running at http://127.0.0.1:8000/');
+            </code></pre>
+        </section>
+        <section id="examples">
+            <h2>Examples</h2>
+            <button id="toggleExamples">Toggle Examples</button>
+            <div id="exampleContent">
+                <article>
+                    <h3>Hello World Server</h3>
+                    <pre><code>
+// Load HTTP module
+const http = require("http");
+
+// Create HTTP server and listen on port 8000 for requests
+http.createServer((req, res) => {
+  // Set the response HTTP header with HTTP status and Content type
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  // Send the response body "Hello World"
+  res.end('Hello World\n');
+}).listen(8000);
+
+// Print URL for accessing server
+console.log('Server running at http://127.0.0.1:8000/');
+                    </code></pre>
+                </article>
+                <article>
+                    <h3>Reading a File</h3>
+                    <pre><code>
+const fs = require('fs');
+
+// Read the contents of a file
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
+                    </code></pre>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('toggleExamples').addEventListener('click', function() {
+            const exampleContent = document.getElementById('exampleContent');
+            if (exampleContent.style.display === 'none') {
+                exampleContent.style.display = 'block';
+            } else {
+                exampleContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
